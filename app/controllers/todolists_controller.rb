@@ -1,4 +1,7 @@
 class TodolistsController < ApplicationController
+  def top
+  end
+  
   def new 
     @list = List.new
   end

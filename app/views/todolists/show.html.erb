@@ -3,4 +3,6 @@
 <%= @list.title %>
 <h4>本文</h4>
 <%= @list.body %>
+<h4>画像</h4>
+<%= attachment_image_tag @list, :image, :fill, 300, 300, format: 'jpeg' %>
 <p><%= link_to "編集", edit_todolist_path(@list.id) %></p>
